@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components'; 
+@import 'tailwindcss/utilities';
+
+*{
+  color:#000;
+}
+body{
+  background-color: #edf2f4 ;
+ 
+}
+#root{
+  background-color: #edf2f4 ;
+  z-index: -1;
+}

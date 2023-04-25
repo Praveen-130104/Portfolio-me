@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+/* font family */
+.rokkit{
+  font-family: 'Rokkitt', serif;
+}
+.mont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* color pallette  */
+.bg-dar{
+  background-color: #000;
+  color: #fff;
+}
+.bg-green{
+  background-color: #709775;
+}
+.clr-teal{
+  color: #008080;
+}
+.clr-green{
+  color: #709775;
+}
+
+/* navbar css  */
+.navb{
+  position: relative;
+  /* height: 100vh; */
+}
+.closed{
+  background-color: transparent;
+  color: #fff;
+}
+
+.l{
+  position: absolute;
+  background-color: #000;
+}
+.list{
+  margin-top: 10%;
+
+}
+.list>ul{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #000;
+
+
+
+}
+.menu-item{
+  background-color: transparent;
+  color: #fff;
+}
+
+.menu-link{
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.menu-link:hover{
+  text-decoration: none;
+  color: #709775;
+}
+
+
+/* home page */
+.head-txt{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tamil{
+  color: #709775;
+}
+.head-text{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.right{
+  animation: animate 2s infinite ease alternate;
+}
+@keyframes animate {
+  100%{
+    transform: translateY(20px);
+  }
+  
+}
+
+.btn-dark{
+  background-color:#000;
+  color:#fff;
+}
+.fa-arrow-up-right-from-square{
+  color: #fff;
+  background-color: transparent;
+}
+.underline{
+  text-decoration: underline;
+}
+.underline:hover{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .home{
+    margin-top: 20%;
+  }
+  .head-txt {
+    font-size:3rem;
+  }
+  .head-text{
+    font-size: 0.8rem;
+  }
+}
+
+/* experience section  */
+
+.hd{
+  font-size: 2rem;
+  font-weight: 300px;
+  color: #000;
+}
+.dh{
+  font-size: 1.2rem;
+  font-weight: 200px;
+  color:#525252
+}
+.work{
+  font-size: 1rem;
+  color: #535252;
+}
+ 
+/* skills page  */
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  margin-top: 20%;
+
+  background: #000;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+
+}
+.skill-slider {
+  background-color: #000;
+
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  background-color: #000;
+
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  background-color: #000;
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/* about page  */
+.abt-fnt{
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .flexed-divs {
+   flex-basis: 100%;
+  }
+}
+
+
+
+/* animations  */
+.jump-text {
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.jump-text:hover {
+  transform: translateY(-10px); /* Add translation along Y-axis to create jump effect */
+}
+
+
+.hr{
+  position: absolute;
+  top: 0%;
+
+}
+
+
+
+/* social media  */
+
+.wrapper {
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  width: 45px;
+  height:45px;
+  margin: 0 10px;
+  line-height: 50px;
+  font-family: Entypo;
+  font-size: 28px;
+  text-align: center;
+  color: #555;
+  border-radius: 10px;
+  background: #eee;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .30s;
+}
+
+.box:hover {
+	transition: .30s;
+	color: #D8D8D8;	
+}
+.box>i{
+  background-color: transparent;
+  /* color: #000; */
+  color:#555;
+  transition: .30s;
+}
+
+#facebook:hover {
+	background-color: #3a5795;
+}
+#facebook:hover i{
+	background-color: transparent;
+  color: #eee;
+}
+#twitter:hover {
+	background-color: #00acee;
+}
+#twitter:hover i{
+	background-color: transparent;
+  color: #eee;
+}
+#github:hover {
+	background-color: #000;
+}
+#github:hover {
+	background-color: #000;
+}
+#github:hover i{
+	background-color: #000;
+  color: #eee;
+}
+#linkedin:hover {
+	background-color: #0e76a8;
+}
+#linkedin:hover i{
+	background-color: transparent;
+  color: #eee;
+}
+
+#instagram:hover{
+  background-color: #E1306C   ;
+}
+#instagram:hover i{
+	background-color: transparent;
+  color: #eee;
+}
+.d{
+  box-shadow: 0 0 0 0.2rem #008080;
+}
+.d:hover{
+  box-shadow:  0 0 0 0.4rem #008080;
+  transition: .30s;
+  animation: pulse 2s  infinite;
+}
+
+
+/* contact page 
+ */
+ .con{
+  font-size: 5rem;
+  font-weight: bolder;
+}
